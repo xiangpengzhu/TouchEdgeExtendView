@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TouchEdgeExtendView"
-  s.version      = "1.0.2"
+  s.version      = "1.0.0"
   s.summary      = "A Framework who can expand a UIView's touch area."
 
   # This description is used to generate tags and improve search results.
