@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TouchEdgeExtendView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "A Framework who can expand a UIView's touch area."
 
   # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "GPL-3.0"
+  s.license      = { :type => "GNU General Public License v3.0", :file => "LICENSE" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
