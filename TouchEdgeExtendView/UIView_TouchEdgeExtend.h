@@ -59,5 +59,5 @@ extern UIViewEdgeInsets * _Nonnull UIViewEdgeInsetsMake(CGFloat top, CGFloat lef
 /**
  需要扩大的可响应区域边距。比如我想把一个按钮的点击区域上下左右都扩大10像素，那么这个属性的值应该是UIViewEdgeInsetsMake(10, 10, 10, 10)
  */
-@property (nonatomic, assign, nullable) UIViewEdgeInsets *responseInsets;
+@property (nonatomic, assign, nullable) UIViewEdgeInsets *extendedResponseInsets;
 @end

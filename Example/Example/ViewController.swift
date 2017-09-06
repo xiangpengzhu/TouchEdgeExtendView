@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 		
 		
 		//将button的可以点击区域扩大10像素
-		button.responseInsets = UIViewEdgeInsetsMake(10, 10, 10, 10)
+		button.extendedResponseInsets = UIViewEdgeInsetsMake(10, 10, 10, 10)
 		
 	}
 

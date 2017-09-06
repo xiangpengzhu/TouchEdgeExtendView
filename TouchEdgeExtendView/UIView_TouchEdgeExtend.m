@@ -45,19 +45,19 @@ UIViewEdgeInsets * UIViewEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat botto
 #pragma mark - TouchEdgeExtend
 @implementation UIView (TouchEdgeExtend)
 
-- (UIViewEdgeInsets *)responseInsets
+- (UIViewEdgeInsets *)extendedResponseInsets
 {
 	return (UIViewEdgeInsets *)objc_getAssociatedObject(self, &responseInsetsKey);
 }
 
-- (void)setResponseInsets:(UIViewEdgeInsets *)responseInsets
+- (void)setExtendedResponseInsets:(UIViewEdgeInsets *)responseInsets
 {
 	objc_setAssociatedObject(self, &responseInsetsKey, responseInsets, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
-	UIViewEdgeInsets *edgeInsets = self.responseInsets;
+	UIViewEdgeInsets *edgeInsets = self.extendedResponseInsets;
 	if (edgeInsets == nil) {
 		edgeInsets = UIViewEdgeInsetsMake(0, 0, 0, 0);
 	}
