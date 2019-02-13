@@ -12,7 +12,8 @@
 		698A966F1F5EABE30047B9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698A966D1F5EABE30047B9B1 /* Main.storyboard */; };
 		698A96711F5EABE30047B9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698A96701F5EABE30047B9B1 /* Assets.xcassets */; };
 		698A96741F5EABE30047B9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698A96721F5EABE30047B9B1 /* LaunchScreen.storyboard */; };
-		698A96811F5EACFE0047B9B1 /* TouchEdgeExtendView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698A96801F5EAC540047B9B1 /* TouchEdgeExtendView.framework */; };
+		A93AA6EC2214073D003C9936 /* TouchEdgeExtendView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698A96801F5EAC540047B9B1 /* TouchEdgeExtendView.framework */; };
+		A93AA6ED2214073D003C9936 /* TouchEdgeExtendView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698A96801F5EAC540047B9B1 /* TouchEdgeExtendView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +24,28 @@
 			remoteGlobalIDString = 690A9EA51F5E9E1B004DD615;
 			remoteInfo = TouchEdgeExtendView;
 		};
+		A93AA6EE2214073D003C9936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 698A967B1F5EAC540047B9B1 /* TouchEdgeExtendView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 690A9EA41F5E9E1B004DD615;
+			remoteInfo = TouchEdgeExtendView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A93AA6F02214073D003C9936 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A93AA6ED2214073D003C9936 /* TouchEdgeExtendView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		698A96661F5EABE30047B9B1 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698A96811F5EACFE0047B9B1 /* TouchEdgeExtendView.framework in Frameworks */,
+				A93AA6EC2214073D003C9936 /* TouchEdgeExtendView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +118,12 @@
 				698A96621F5EABE30047B9B1 /* Sources */,
 				698A96631F5EABE30047B9B1 /* Frameworks */,
 				698A96641F5EABE30047B9B1 /* Resources */,
+				A93AA6F02214073D003C9936 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A93AA6EF2214073D003C9936 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -118,7 +142,7 @@
 				TargetAttributes = {
 					698A96651F5EABE30047B9B1 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6U9A79UNKV;
+						DevelopmentTeam = 67B85GMWTD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -181,6 +205,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A93AA6EF2214073D003C9936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TouchEdgeExtendView;
+			targetProxy = A93AA6EE2214073D003C9936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		698A966D1F5EABE30047B9B1 /* Main.storyboard */ = {
@@ -299,7 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6U9A79UNKV;
+				DEVELOPMENT_TEAM = 67B85GMWTD;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xpz.Example;
@@ -312,7 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6U9A79UNKV;
+				DEVELOPMENT_TEAM = 67B85GMWTD;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xpz.Example;
